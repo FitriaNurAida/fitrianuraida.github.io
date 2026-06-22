@@ -3,109 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
-    <!-- Tailwind CSS CDN for instant, beautiful styling -->
+    <title>Workspace & Lab</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tableau Embedding API -->
     <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+<body class="bg-[#0b0f19] text-gray-200 font-sans selection:bg-cyan-500 selection:text-black">
 
-    <!-- HERO SECTION -->
-    <header class="max-w-5xl mx-auto px-6 pt-16 pb-12 border-b border-gray-200">
-        <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">Hi, I'm a Data & AI Practitioner 👋</h1>
-        <p class="mt-4 text-xl text-gray-600 max-w-2xl">
-            I bridge the gap between complex data infrastructure and real business value. Exploring data pipelines, large language models, and interactive dashboard engineering.
-        </p>
-        <div class="mt-6 flex gap-4">
-            <a href="#dashboards" class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">View Dashboards</a>
-            <a href="#projects" class="px-4 py-2 bg-gray-200 text-gray-800 font-medium rounded-lg hover:bg-gray-300 transition">Projects & Articles</a>
-        </div>
-    </header>
-
-    <!-- LIVE DASHBOARDS SECTION -->
-    <section id="dashboards" class="max-w-5xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold tracking-tight mb-2">Interactive BI Dashboards</h2>
-        <p class="text-gray-600 mb-6">Explore fully interactive data products embedded directly from Tableau and Looker Studio.</p>
+    <!-- MAIN WRAPPER -->
+    <main class="max-w-4xl mx-auto px-6 py-20">
         
-        <div class="grid grid-cols-1 gap-8">
-            <!-- Example: Looker Studio Embed Container -->
-            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <h3 class="font-semibold text-lg mb-2">Looker Studio Performance Report</h3>
-                <div class="w-full aspect-[16/9] bg-gray-100 rounded overflow-hidden">
-                    <!-- REPLACE THE URL IN SRC BELOW WITH YOUR ACTUAL LOOKER EMBED URL -->
+        <!-- HEADER / INTRO -->
+        <header class="mb-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono mb-4 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-cyan-400"></span> System Active
+            </div>
+            <h1 class="text-4xl font-light tracking-tight text-white sm:text-5xl font-mono">
+                fitria_nur_aida<span class="text-cyan-400">.log</span>
+            </h1>
+            <p class="mt-6 text-lg text-gray-400 leading-relaxed max-w-xl">
+                Building dashboards, testing AI agents, and documenting technical workflows. This is my digital sandbox.
+            </p>
+        </header>
+
+        <!-- LIVE ANALYTICS EMBED SECTION -->
+        <section class="mb-20">
+            <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase mb-6 flex items-center gap-2">
+                // Interactive Dashboards
+            </h2>
+            <div class="bg-[#121826] rounded-xl border border-gray-800 p-2 shadow-2xl">
+                <div class="w-full aspect-[16/9] rounded-lg overflow-hidden bg-[#1a2333]">
+                    <!-- Replace URL in src below with your Looker/Tableau embed -->
                     <iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/0B5gKw_N8wO9eS2RQX01ScV9vUTA/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- DYNAMIC PROJECTS & ARTICLES SECTION -->
-    <section id="projects" class="max-w-5xl mx-auto px-6 py-12 border-t border-gray-200">
-        <h2 class="text-2xl font-bold tracking-tight mb-2">Projects, Vibe Coding & Articles</h2>
-        <p class="text-gray-600 mb-8">A running stream of automated workflows, AI experiments, and technical breakdowns.</p>
-        
-        <!-- This grid is populated automatically by JavaScript below -->
-        <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
-    </section>
+        <!-- STREAM / DYNAMIC ITEMS -->
+        <section>
+            <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase mb-6">
+                // Output & Artifacts
+            </h2>
+            
+            <!-- Target for JavaScript data rendering -->
+            <div id="log-stream" class="space-y-4"></div>
+        </section>
 
-    <!-- FOOTER -->
-    <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-gray-200 text-center text-sm text-gray-500">
-        &copy; 2026 • Powered by GitHub Pages
-    </footer>
+    </main>
 
-    <!-- DYNAMIC DATA ARCHITECTURE (EASY TO EDIT) -->
+    <!-- DYNAMIC DATA (Still very easy to edit!) -->
     <script>
-        // 1. EDIT THIS ARRAY TO ADD/REMOVE STUFF:
-        // You can tag things as 'Article', 'Vibe Coding', 'Code Repo', or 'PDF'
         const myItems = [
             {
-                title: "Building an Automated Ecosystem Dashboard",
-                type: "Code Repo",
-                desc: "Transitioned manual department workflows into an automated data pipeline using SQL and orchestration layers.",
-                link: "https://github.com",
-                linkLabel: "View Repository"
+                title: "Automated Ecosystem Dashboard",
+                tag: "pipeline",
+                desc: "Transitioned manual department workflows into automated SQL orchestrations.",
+                link: "#",
+                actionText: "Source Code"
             },
             {
                 title: "Evaluating LLM Reasoning Benchmarks",
-                type: "Article",
-                desc: "A deep dive into prompt engineering workflows and structural feedback loops for agentic systems.",
-                link: "https://github.com", 
-                linkLabel: "Read Article"
+                tag: "article",
+                desc: "Analyzing room for structural feedback loops within agentic prompt engineering frameworks.",
+                link: "#",
+                actionText: "Read Post"
             },
             {
-                title: "Interactive Markdown-to-HTML Parser Sandbox",
-                type: "Vibe Coding",
-                desc: "A lightweight browser tool built entirely with LLM generation to parse text structures dynamically.",
-                link: "https://github.com",
-                linkLabel: "Launch App"
+                title: "Dynamic Markdown Parser Sandbox",
+                tag: "vibe-coding",
+                desc: "A lightweight scratchpad built using generative workflows to render text layouts instantly.",
+                link: "#",
+                actionText: "Launch Tool"
             }
         ];
 
-        // 2. AUTOMATIC RENDERING ENGINE
-        const grid = document.getElementById('project-grid');
+        const stream = document.getElementById('log-stream');
         myItems.forEach(item => {
-            // Pick badge colors depending on type
-            let badgeBg = "bg-gray-100 text-gray-800";
-            if(item.type === "Article") badgeBg = "bg-purple-100 text-purple-800";
-            if(item.type === "Vibe Coding") badgeBg = "bg-amber-100 text-amber-800";
-            if(item.type === "Code Repo") badgeBg = "bg-blue-100 text-blue-800";
-
-            const card = `
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium ${badgeBg} mb-3">${item.type}</span>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">${item.title}</h3>
-                        <p class="text-gray-600 text-sm mb-4">${item.desc}</p>
+            const row = `
+                <div class="group bg-[#121826] hover:bg-[#161e30] border border-gray-800 hover:border-gray-700 p-6 rounded-xl transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-xs text-gray-500 group-hover:text-cyan-400/80 transition-colors">[ ${item.tag} ]</span>
+                            <h3 class="text-lg font-medium text-white">${item.title}</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm max-w-xl leading-relaxed">${item.desc}</p>
                     </div>
-                    <div>
-                        <a href="${item.link}" target="_blank" class="text-sm font-semibold text-blue-600 hover:text-blue-800 inline-flex items-center gap-1">
-                            ${item.linkLabel} &rarr;
+                    <div class="shrink-0">
+                        <a href="${item.link}" target="_blank" class="inline-flex items-center justify-center px-4 py-2 bg-[#1a2333] hover:bg-cyan-500 hover:text-black font-mono text-xs text-cyan-400 rounded-lg transition-all border border-gray-800 hover:border-transparent">
+                            ${item.actionText}
                         </a>
                     </div>
                 </div>
             `;
-            grid.innerHTML += card;
+            stream.innerHTML += row;
         });
     </script>
 </body>
