@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frihandhika | Portfolio Sandbox</title>
+    <title>Fitria Nur Aida | BI & Analytics Workspace</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,76 +12,72 @@
     <style>
         * { font-family: 'Inter', sans-serif; }
         .font-playfair { font-family: 'Playfair Display', serif; }
-        .glass { background: rgba(15, 23, 42, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .glass { background: rgba(13, 17, 26, 0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
         html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-[#030712] text-gray-200 antialiased selection:bg-[#e8702a] selection:text-black">
 
-    <nav class="fixed top-0 left-0 right-0 z-[100] bg-[#030712]/60 backdrop-blur-md border-b border-white/5 px-6 py-4">
-        <div class="max-w-5xl mx-auto flex items-center justify-between">
-            <a href="#home" class="flex items-center gap-2">
-                <svg class="w-6 h-6 fill-white" viewBox="0 0 256 256">
-                    <path d="M 256 256 L 128 256 L 0 128 L 128 128 Z M 256 128 L 128 128 L 0 0 L 128 0 Z"/>
-                </svg>
-                <span class="text-white font-playfair italic text-xl font-semibold tracking-tight">Frihandhika</span>
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-xl">
+        <div class="glass border border-white/10 rounded-full px-6 py-3 sm:py-4 shadow-[0_12px_40px_rgba(0,0,0,0.6)] flex items-center justify-around text-center">
+            <a href="#home" class="text-xs sm:text-sm font-mono tracking-tight text-white hover:text-[#e8702a] transition-colors duration-300 py-1">
+                Home
             </a>
-            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
-                <a href="#home" class="hover:text-[#e8702a] transition-colors">Home</a>
-                <a href="#personal-projects" class="hover:text-[#e8702a] transition-colors">Personal Projects</a>
-                <a href="#company-projects" class="hover:text-[#e8702a] transition-colors">Company Projects</a>
-                <a href="#prompts" class="hover:text-[#e8702a] transition-colors">Prompt Matrix</a>
-            </div>
-            <a href="mailto:your-email@example.com" class="text-xs font-mono px-4 py-2 bg-white/5 border border-white/10 hover:border-[#e8702a]/40 rounded-full text-white transition-all">
-                // CONNECT
+            
+            <a href="#personal-projects" class="text-xs sm:text-sm font-mono tracking-tight text-gray-400 hover:text-[#e8702a] transition-colors duration-300 flex flex-col items-center sm:block">
+                <span>Personal</span> <span class="sm:inline block">Projects</span>
+            </a>
+            
+            <a href="#company-projects" class="text-xs sm:text-sm font-mono tracking-tight text-gray-400 hover:text-[#e8702a] transition-colors duration-300 flex flex-col items-center sm:block">
+                <span>Company</span> <span class="sm:inline block">Projects</span>
             </a>
         </div>
     </nav>
 
-    <section id="home" class="pt-32 pb-24 max-w-5xl mx-auto px-6 relative">
+    <section id="home" class="pt-36 pb-24 max-w-5xl mx-auto px-6 relative">
         <div class="absolute top-12 left-1/4 w-[30vw] h-[30vw] rounded-full bg-[#e8702a]/5 blur-[100px] pointer-events-none"></div>
         
         <div class="max-w-3xl mb-16">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-[#e8702a]/30 text-[#e8702a] text-xs font-mono mb-6">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#e8702a] animate-pulse"></span> POSITION: DATA & AI PRACTITIONER
+                <span class="w-1.5 h-1.5 rounded-full bg-[#e8702a] animate-pulse"></span> POSITION: ASSOCIATE BI MANAGER & PRACTITIONER LECTURER
             </div>
             <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none mb-6">
-                Engineering value <br><span class="font-playfair italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">from source data to UI.</span>
+                Fitria Nur Aida<br><span class="font-playfair italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Data-to-value infrastructure lifecycle.</span>
             </h1>
             <p class="text-gray-400 text-lg leading-relaxed font-light">
-                Hi, I'm Frihandhika. I synthesize structured databases, orchestrate robust automated deployment pipelines, evaluate LLM system architectures, and build modern responsive interfaces to translate numbers into production assets.
+                I bridge the gap between complex engineering pipelines and strategic choices. Specializing in automated multi-department dashboards, cloud data warehousing structures, machine learning applications, and LLM benchmarking systems.
             </p>
             
             <div class="mt-8 flex flex-wrap gap-4 text-xs font-mono text-gray-400">
                 <a href="mailto:your-email@example.com" class="flex items-center gap-2 px-3 py-2 border border-white/5 hover:border-white/20 bg-white/[0.02] rounded-xl transition-all hover:text-white">
-                    <span>✉️</span> email@domain.com
+                    <span>✉️</span> Contact Email
                 </a>
                 <a href="https://linkedin.com" target="_blank" class="flex items-center gap-2 px-3 py-2 border border-white/5 hover:border-white/20 bg-white/[0.02] rounded-xl transition-all hover:text-white">
                     <span>🔗</span> LinkedIn Profile
                 </a>
                 <a href="https://github.com" target="_blank" class="flex items-center gap-2 px-3 py-2 border border-white/5 hover:border-white/20 bg-white/[0.02] rounded-xl transition-all hover:text-white">
-                    <span>💻</span> GitHub Code
+                    <span>💻</span> GitHub Repository
                 </a>
             </div>
         </div>
 
         <div>
-            <h2 class="text-xs font-mono tracking-widest text-gray-500 uppercase mb-6">// SERVICES & EXECUTIONS</h2>
+            <h2 class="text-xs font-mono tracking-widest text-gray-500 uppercase mb-6">// SERVICES & AREAS OF EXPERTISE</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="glass border border-white/5 p-6 rounded-2xl">
-                    <div class="text-[#e8702a] text-2xl mb-4">🧠</div>
-                    <h3 class="text-white font-semibold text-lg mb-2">LLM & Prompt Systems</h3>
-                    <p class="text-gray-400 text-sm font-light leading-relaxed">Developing deterministic prompt structures, benchmarking agentic workflows, and structuring contextual token feedback loops.</p>
+                    <div class="text-[#e8702a] text-2xl mb-4">📊</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">Business Intelligence</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Automating manual company streams into unified, interactive data visualization environments using Tableau, Looker Studio, and SQL.</p>
                 </div>
                 <div class="glass border border-white/5 p-6 rounded-2xl">
-                    <div class="text-[#e8702a] text-2xl mb-4">📊</div>
-                    <h3 class="text-white font-semibold text-lg mb-2">Dashboard Engineering</h3>
-                    <p class="text-gray-400 text-sm font-light leading-relaxed">Transitioning manual reporting into real-time interactive business layers across Tableau, Looker Studio, and custom UI embeds.</p>
+                    <div class="text-[#e8702a] text-2xl mb-4">🧠</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">AI Systems & Analytics</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Evaluating LLM performance metrics, testing prompt workflows, engineering data science curriculum frameworks, and processing algorithmic layers.</p>
                 </div>
                 <div class="glass border border-white/5 p-6 rounded-2xl">
                     <div class="text-[#e8702a] text-2xl mb-4">⚡</div>
-                    <h3 class="text-white font-semibold text-lg mb-2">Data Infrastructure</h3>
-                    <p class="text-gray-400 text-sm font-light leading-relaxed">Architecting automated ELT pipelines, optimizing complex analytical warehouse structures, and aggregating core multi-department telemetry.</p>
+                    <h3 class="text-white font-semibold text-lg mb-2">Data Warehousing</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Structuring scalable databases across BigQuery, Redshift, Snowflake, or PostgreSQL to manage robust cross-department operations.</p>
                 </div>
             </div>
         </div>
@@ -96,7 +92,7 @@
         </div>
     </section>
 
-    <section id="company-projects" class="py-24 border-t border-white/5 max-w-5xl mx-auto px-6">
+    <section id="company-projects" class="py-24 border-t border-white/5 max-w-5xl mx-auto px-6 mb-12">
         <h2 class="text-xs font-mono tracking-widest text-[#e8702a] uppercase mb-2">// ENTERPRISE LEDGER</h2>
         <p class="text-gray-400 font-light text-sm mb-8">Production metrics summaries and data architectures built natively for organizational deployment pipelines.</p>
         
@@ -104,11 +100,11 @@
             <div class="lg:col-span-1 space-y-4">
                 <div class="glass border border-white/5 p-6 rounded-2xl">
                     <span class="text-xs font-mono text-gray-500 block mb-1">SYSTEM INSTANCE</span>
-                    <h3 class="text-white font-bold text-lg mb-2">Operational Analytics Hub</h3>
-                    <p class="text-gray-400 text-sm font-light leading-relaxed mb-4">Engineered the data extraction layer connecting multi-tiered logistics and tracking structures into structured warehousing environments.</p>
+                    <h3 class="text-white font-bold text-lg mb-2">Corporate BI Dashboard Ecosystem</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed mb-4">Spearheaded the automation and integration of complex operational pipelines across multiple core departments, eliminating manual reporting layers.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] font-mono px-2 py-0.5 bg-white/5 rounded border border-white/5 text-gray-400">SQL Automation</span>
-                        <span class="text-[10px] font-mono px-2 py-0.5 bg-white/5 rounded border border-white/5 text-gray-400">ETL Layers</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 bg-white/5 rounded border border-white/5 text-gray-400">SQL Optimization</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 bg-white/5 rounded border border-white/5 text-gray-400">Dashboard Ecosystem</span>
                     </div>
                 </div>
             </div>
@@ -121,45 +117,8 @@
         </div>
     </section>
 
-    <section id="prompts" class="bg-[#050505] py-24 border-t border-white/5">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-xs font-mono tracking-widest text-[#e8702a] uppercase mb-2">// CORE PROMPTS</h2>
-            <p class="text-gray-400 font-light text-sm mb-10">Engineered system parameters deployed for structured coding workflows and deterministic data extraction.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-mono text-purple-400 bg-purple-500/5 px-2.5 py-1 rounded border border-purple-500/10">UI CONTEXT AGENT</span>
-                            <span class="text-[11px] font-mono text-gray-600">// production</span>
-                        </div>
-                        <p class="font-playfair italic text-white text-lg mb-3">Structured Data Converter</p>
-                        <div class="bg-black/40 rounded-xl p-4 border border-white/5 font-mono text-xs text-gray-400 h-28 overflow-y-auto mb-4 whitespace-pre-wrap" id="prompt-txt-1">Act as a data structuring engineer. Take the following unorganized text strings and convert them exclusively into valid JSON arrays matching this schema: {title: string, date: string, type: string}. Do not conversationalize or add markdown wrappers.</div>
-                    </div>
-                    <button onclick="copyPrompt('prompt-txt-1', this)" class="w-full bg-white/5 hover:bg-[#e8702a] border border-white/5 hover:border-transparent text-gray-300 hover:text-black font-mono text-xs py-2 rounded-xl transition-all">
-                        Copy Prompt Block
-                    </button>
-                </div>
-
-                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-mono text-blue-400 bg-blue-500/5 px-2.5 py-1 rounded border border-blue-500/10">SQL OPTIMIZER</span>
-                            <span class="text-[11px] font-mono text-gray-600">// production</span>
-                        </div>
-                        <p class="font-playfair italic text-white text-lg mb-3">Column Aggregation Guard</p>
-                        <div class="bg-black/40 rounded-xl p-4 border border-white/5 font-mono text-xs text-gray-400 h-28 overflow-y-auto mb-4 whitespace-pre-wrap" id="prompt-txt-2">Analyze the appended execution layout. Rewrite all window operations to eliminate redundant scanning partitioning layers. Ensure date tokens evaluate dynamically based on standard UTC zone schemas. Ensure query performance scales under large partition volume bounds.</div>
-                    </div>
-                    <button onclick="copyPrompt('prompt-txt-2', this)" class="w-full bg-white/5 hover:bg-[#e8702a] border border-white/5 hover:border-transparent text-gray-300 hover:text-black font-mono text-xs py-2 rounded-xl transition-all">
-                        Copy Prompt Block
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer class="max-w-5xl mx-auto px-6 py-12 border-t border-white/5 text-center md:flex md:items-center md:justify-between text-xs font-mono text-gray-600">
-        <div>&copy; 2026 Frihandhika &bull; Workspace Ecosystem</div>
+        <div>&copy; 2026 Fitria Nur Aida &bull; Professional Ledger</div>
         <div class="mt-2 md:mt-0">HOSTED SECURELY ON GITHUB PAGES FOR FREE</div>
     </footer>
 
@@ -167,7 +126,6 @@
         // =========================================================
         // 🛠️ DATA ENTRY ARRAY: ADD OR EDIT YOUR PROJECTS HERE
         // =========================================================
-        // Supported platform type badges: "GITHUB", "HUGGING FACE", "APPS", "YOUTUBE"
         const personalProjectsData = [
             {
                 title: "Automated Workflow Engine",
@@ -208,25 +166,21 @@
         // =========================================================
         const renderingGrid = document.getElementById('personal-grid');
         
-        // Dynamic chronological sorting rule: Newest date values first (descending order)
+        // Sorting rule: Newest date values first (descending order)
         personalProjectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        // Generate card items dynamically
         personalProjectsData.forEach(project => {
-            // Pick platform visual configurations
             let badgeStyle = "text-gray-400 border-white/10 bg-white/5";
             if (project.type === "GITHUB") badgeStyle = "text-blue-400 border-blue-500/20 bg-blue-500/5";
             if (project.type === "HUGGING FACE") badgeStyle = "text-amber-400 border-amber-500/20 bg-amber-500/5";
             if (project.type === "APPS") badgeStyle = "text-emerald-400 border-emerald-500/20 bg-emerald-500/5";
             if (project.type === "YOUTUBE") badgeStyle = "text-red-400 border-red-500/20 bg-red-500/5";
 
-            // Map responsive CTA action triggers based on platform identity
             let ctaText = "Launch Deployment";
             if (project.type === "GITHUB") ctaText = "Inspect Repository";
             if (project.type === "HUGGING FACE") ctaText = "Explore Model Space";
             if (project.type === "YOUTUBE") ctaText = "Watch Overview Video";
 
-            // Generate structural technology tag strings
             const tagsMarkup = project.tags.map(t => `<span class="text-[10px] font-mono px-2 py-0.5 border border-white/5 bg-white/[0.02] rounded text-gray-500">${t}</span>`).join('');
 
             const finalCardHtml = `
@@ -250,25 +204,6 @@
             `;
             renderingGrid.innerHTML += finalCardHtml;
         });
-
-        // =========================================================
-        // 📋 INTERACTIVE CLICK-TO-COPY CLIPBOARD SCRIPT
-        // =========================================================
-        function copyPrompt(targetId, buttonElement) {
-            const textToCopy = document.getElementById(targetId).innerText;
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                const originalText = buttonElement.innerText;
-                buttonElement.innerText = "Prompt Copied Successful! ✓";
-                buttonElement.style.backgroundColor = "#e8702a";
-                buttonElement.style.color = "#000000";
-                
-                setTimeout(() => {
-                    buttonElement.innerText = originalText;
-                    buttonElement.style.backgroundColor = "";
-                    buttonElement.style.color = "";
-                }, 2000);
-            });
-        }
     </script>
 </body>
 </html>
