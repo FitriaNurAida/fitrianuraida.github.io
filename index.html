@@ -3,215 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Digital Sandbox</title>
-    <!-- Tailwind CSS for styling -->
+    <title>Frihandhika | Portfolio Sandbox</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tableau API for embedding -->
-    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    
     <style>
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(1deg); }
-        }
-        .animate-float { animation: float 6s ease-in-out infinite; }
+        * { font-family: 'Inter', sans-serif; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
         .glass { background: rgba(15, 23, 42, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-[#030712] text-gray-100 font-sans antialiased relative overflow-x-hidden selection:bg-cyan-500 selection:text-black">
+<body class="bg-[#030712] text-gray-200 antialiased selection:bg-[#e8702a] selection:text-black">
 
-    <!-- INTERACTIVE CANVAS BACKGROUND -->
-    <canvas id="bg-canvas" class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-40"></canvas>
-
-    <!-- TOP GLOW EFFECTS -->
-    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none"></div>
-    <div class="fixed top-[20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-purple-500/10 blur-[120px] pointer-events-none"></div>
-
-    <!-- MAIN PORTFOLIO BODY -->
-    <main class="max-w-5xl mx-auto px-6 py-16 relative z-10">
-
-        <!-- HEADER SECTION -->
-        <header class="mb-20 max-w-2xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-cyan-500/30 text-cyan-400 text-xs font-mono mb-6 shadow-[0_0_15px_rgba(6,182,212,0.15)]">
-                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span> LOG_STREAM: ONLINE
+    <nav class="fixed top-0 left-0 right-0 z-[100] bg-[#030712]/60 backdrop-blur-md border-b border-white/5 px-6 py-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-2">
+                <svg class="w-6 h-6 fill-white" viewBox="0 0 256 256">
+                    <path d="M 256 256 L 128 256 L 0 128 L 128 128 Z M 256 128 L 128 128 L 0 0 L 128 0 Z"/>
+                </svg>
+                <span class="text-white font-playfair italic text-xl font-semibold tracking-tight">Frihandhika</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
+                <a href="#home" class="hover:text-[#e8702a] transition-colors">Home</a>
+                <a href="#personal-projects" class="hover:text-[#e8702a] transition-colors">Personal Projects</a>
+                <a href="#company-projects" class="hover:text-[#e8702a] transition-colors">Company Projects</a>
+                <a href="#prompts" class="hover:text-[#e8702a] transition-colors">Prompt Matrix</a>
             </div>
-            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-gray-500 font-mono">
-                fitria_nur_aida<span class="text-cyan-400 font-bold">()</span>
-            </h1>
-            <p class="mt-6 text-lg sm:text-xl text-gray-400 leading-relaxed font-light">
-                Building robust analytical ecosystems, deploying interactive dashboards, and vibe coding automation experiments.
-            </p>
-        </header>
+            <a href="mailto:your-email@example.com" class="text-xs font-mono px-4 py-2 bg-white/5 border border-white/10 hover:border-[#e8702a]/40 rounded-full text-white transition-all">
+                // CONNECT
+            </a>
+        </div>
+    </nav>
 
-        <!-- DYNAMIC METRICS OVERVIEW (AUTOMATED CARDS) -->
-        <section class="mb-20">
-            <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase mb-8 flex items-center gap-2">
-                <span class="text-purple-400 font-bold">&gt;</span> // Interactive Dashboards
-            </h2>
-            <div class="glass rounded-2xl border border-white/10 p-3 shadow-2xl transition-all duration-500 hover:border-cyan-500/40 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)]">
-                <div class="w-full aspect-[16/9] rounded-xl overflow-hidden bg-slate-900/50 relative">
-                    <!-- Drop your live Looker Studio or Tableau public shared link inside src below -->
+    <section id="home" class="pt-32 pb-24 max-w-5xl mx-auto px-6 relative">
+        <div class="absolute top-12 left-1/4 w-[30vw] h-[30vw] rounded-full bg-[#e8702a]/5 blur-[100px] pointer-events-none"></div>
+        
+        <div class="max-w-3xl mb-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-[#e8702a]/30 text-[#e8702a] text-xs font-mono mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#e8702a] animate-pulse"></span> POSITION: DATA & AI PRACTITIONER
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none mb-6">
+                Engineering value <br><span class="font-playfair italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">from source data to UI.</span>
+            </h1>
+            <p class="text-gray-400 text-lg leading-relaxed font-light">
+                Hi, I'm Frihandhika. I synthesize structured databases, orchestrate robust automated deployment pipelines, evaluate LLM system architectures, and build modern responsive interfaces to translate numbers into production assets.
+            </p>
+            
+            <div class="mt-8 flex flex-wrap gap-4 text-xs font-mono text-gray-400">
+                <a href="mailto:your-email@example.com" class="flex items-center gap-2 px-3 py-2 border border-white/5 hover:border-white/20 bg-white/[0.02] rounded-xl transition-all hover:text-white">
+                    <span>✉️</span> email@domain.com
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="flex items-center gap-2 px-3 py-2 border border-white/5 hover:border-white/20 bg-white/[0.02] rounded-xl transition-all hover:text-white">
+                    <span>🔗</span> LinkedIn Profile
+                </a>
+                <a href="https://github.com" target="_blank" class="flex items-center gap-2 px-3 py-2 border border-white/5 hover:border-white/20 bg-white/[0.02] rounded-xl transition-all hover:text-white">
+                    <span>💻</span> GitHub Code
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-xs font-mono tracking-widest text-gray-500 uppercase mb-6">// SERVICES & EXECUTIONS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass border border-white/5 p-6 rounded-2xl">
+                    <div class="text-[#e8702a] text-2xl mb-4">🧠</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">LLM & Prompt Systems</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Developing deterministic prompt structures, benchmarking agentic workflows, and structuring contextual token feedback loops.</p>
+                </div>
+                <div class="glass border border-white/5 p-6 rounded-2xl">
+                    <div class="text-[#e8702a] text-2xl mb-4">📊</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">Dashboard Engineering</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Transitioning manual reporting into real-time interactive business layers across Tableau, Looker Studio, and custom UI embeds.</p>
+                </div>
+                <div class="glass border border-white/5 p-6 rounded-2xl">
+                    <div class="text-[#e8702a] text-2xl mb-4">⚡</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">Data Infrastructure</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">Architecting automated ELT pipelines, optimizing complex analytical warehouse structures, and aggregating core multi-department telemetry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal-projects" class="bg-[#050505] py-24 border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xs font-mono tracking-widest text-[#e8702a] uppercase mb-2">// PERSONAL ARTIFACTS</h2>
+            <p class="text-gray-400 font-light text-sm mb-10">A live streaming collection of custom models, software repositories, content pieces, and deployment testing logs.</p>
+            
+            <div id="personal-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+        </div>
+    </section>
+
+    <section id="company-projects" class="py-24 border-t border-white/5 max-w-5xl mx-auto px-6">
+        <h2 class="text-xs font-mono tracking-widest text-[#e8702a] uppercase mb-2">// ENTERPRISE LEDGER</h2>
+        <p class="text-gray-400 font-light text-sm mb-8">Production metrics summaries and data architectures built natively for organizational deployment pipelines.</p>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div class="lg:col-span-1 space-y-4">
+                <div class="glass border border-white/5 p-6 rounded-2xl">
+                    <span class="text-xs font-mono text-gray-500 block mb-1">SYSTEM INSTANCE</span>
+                    <h3 class="text-white font-bold text-lg mb-2">Operational Analytics Hub</h3>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed mb-4">Engineered the data extraction layer connecting multi-tiered logistics and tracking structures into structured warehousing environments.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-mono px-2 py-0.5 bg-white/5 rounded border border-white/5 text-gray-400">SQL Automation</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 bg-white/5 rounded border border-white/5 text-gray-400">ETL Layers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-2 glass border border-white/10 p-2 rounded-2xl shadow-2xl group hover:border-[#e8702a]/30 transition-all duration-500">
+                <div class="w-full aspect-[16/10] bg-slate-950 rounded-xl overflow-hidden relative">
                     <iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/0B5gKw_N8wO9eS2RQX01ScV9vUTA/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- DYNAMIC LOG STREAM SECTION -->
-        <section>
-            <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase mb-8 flex items-center gap-2">
-                <span class="text-purple-400 font-bold">&gt;</span> // Technical Log & Projects
-            </h2>
+    <section id="prompts" class="bg-[#050505] py-24 border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xs font-mono tracking-widest text-[#e8702a] uppercase mb-2">// CORE PROMPTS</h2>
+            <p class="text-gray-400 font-light text-sm mb-10">Engineered system parameters deployed for structured coding workflows and deterministic data extraction.</p>
             
-            <!-- JavaScript renders the project list array right here -->
-            <div id="dynamic-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
-        </section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono text-purple-400 bg-purple-500/5 px-2.5 py-1 rounded border border-purple-500/10">UI CONTEXT AGENT</span>
+                            <span class="text-[11px] font-mono text-gray-600">// production</span>
+                        </div>
+                        <p class="font-playfair italic text-white text-lg mb-3">Structured Data Converter</p>
+                        <div class="bg-black/40 rounded-xl p-4 border border-white/5 font-mono text-xs text-gray-400 h-28 overflow-y-auto mb-4 whitespace-pre-wrap" id="prompt-txt-1">Act as a data structuring engineer. Take the following unorganized text strings and convert them exclusively into valid JSON arrays matching this schema: {title: string, date: string, type: string}. Do not conversationalize or add markdown wrappers.</div>
+                    </div>
+                    <button onclick="copyPrompt('prompt-txt-1', this)" class="w-full bg-white/5 hover:bg-[#e8702a] border border-white/5 hover:border-transparent text-gray-300 hover:text-black font-mono text-xs py-2 rounded-xl transition-all">
+                        Copy Prompt Block
+                    </button>
+                </div>
 
-    </main>
+                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono text-blue-400 bg-blue-500/5 px-2.5 py-1 rounded border border-blue-500/10">SQL OPTIMIZER</span>
+                            <span class="text-[11px] font-mono text-gray-600">// production</span>
+                        </div>
+                        <p class="font-playfair italic text-white text-lg mb-3">Column Aggregation Guard</p>
+                        <div class="bg-black/40 rounded-xl p-4 border border-white/5 font-mono text-xs text-gray-400 h-28 overflow-y-auto mb-4 whitespace-pre-wrap" id="prompt-txt-2">Analyze the appended execution layout. Rewrite all window operations to eliminate redundant scanning partitioning layers. Ensure date tokens evaluate dynamically based on standard UTC zone schemas. Ensure query performance scales under large partition volume bounds.</div>
+                    </div>
+                    <button onclick="copyPrompt('prompt-txt-2', this)" class="w-full bg-white/5 hover:bg-[#e8702a] border border-white/5 hover:border-transparent text-gray-300 hover:text-black font-mono text-xs py-2 rounded-xl transition-all">
+                        Copy Prompt Block
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="max-w-5xl mx-auto px-6 py-12 border-t border-white/5 text-center text-xs font-mono text-gray-600">
-        SYS.REF // EXECUTION_SUCCESSFUL &bull; HOSTED BY GITHUB PAGES
+    <footer class="max-w-5xl mx-auto px-6 py-12 border-t border-white/5 text-center md:flex md:items-center md:justify-between text-xs font-mono text-gray-600">
+        <div>&copy; 2026 Frihandhika &bull; Workspace Ecosystem</div>
+        <div class="mt-2 md:mt-0">HOSTED SECURELY ON GITHUB PAGES FOR FREE</div>
     </footer>
 
-    <!-- INTERACTIVE ENGINE & DATA PACKAGES -->
     <script>
         // =========================================================
-        // 🛠️ DATA ENTRY MATRIX: EDITED ITEMS LIVE HERE
+        // 🛠️ DATA ENTRY ARRAY: ADD OR EDIT YOUR PROJECTS HERE
         // =========================================================
-        const myPortfolioData = [
+        // Supported platform type badges: "GITHUB", "HUGGING FACE", "APPS", "YOUTUBE"
+        const personalProjectsData = [
             {
-                title: "Automated Ecosystem Dashboard",
-                type: "CODE REPO",
-                badgeClass: "text-blue-400 border-blue-500/20 bg-blue-500/5",
-                desc: "Transitioned manual department workflows into an automated data pipeline using SQL orchestration.",
+                title: "Automated Workflow Engine",
+                type: "GITHUB",
+                date: "2026-06",
+                desc: "An automated multi-department pipeline tracking and aggregating workflow instances into unified cloud database layers.",
                 link: "https://github.com",
-                actionLabel: "View Source"
+                tags: ["SQL", "Python", "Automation"]
             },
             {
-                title: "Evaluating LLM Reasoning Benchmarks",
-                type: "ARTICLE",
-                badgeClass: "text-purple-400 border-purple-500/20 bg-purple-500/5",
-                desc: "An end-to-end framework layout exploring structured feedback loops in prompt architecture.",
-                link: "https://github.com",
-                actionLabel: "Read Post"
+                title: "LLM Response Benchmark Matrix",
+                type: "HUGGING FACE",
+                date: "2026-05",
+                desc: "A deployment model evaluating token generation consistency and formatting guardrails on custom datasets.",
+                link: "https://huggingface.co",
+                tags: ["AI", "Transformers", "LLM Evaluation"]
             },
             {
-                title: "Markdown-to-HTML Parser Sandbox",
-                type: "VIBE CODING",
-                badgeClass: "text-amber-400 border-amber-500/20 bg-amber-500/5",
-                desc: "A lightweight scratchpad UI designed entirely via generative AI workflows to parse string tokens.",
+                title: "Interactive Sandbox Dashboard",
+                type: "APPS",
+                date: "2026-04",
+                desc: "A client-side UI application rendering streaming JSON schemas directly into operational visualizations via Tailwind metrics.",
                 link: "https://github.com",
-                actionLabel: "Launch App"
+                tags: ["JavaScript", "Tailwind CDN", "API"]
+            },
+            {
+                title: "Vibe Coding Architecture Overview",
+                type: "YOUTUBE",
+                date: "2026-02",
+                desc: "A video breakdown logging the end-to-end rapid prototyping of custom operational dashboards using semantic generative prompting structures.",
+                link: "https://youtube.com",
+                tags: ["Video Guide", "AI Prompting", "Architecture"]
             }
         ];
 
         // =========================================================
-        // 🔄 DYNAMIC CARD GENERATOR
+        // 🔄 AUTOMATED CHRONOLOGICAL SORTING & RENDERING ENGINE
         // =========================================================
-        const targetGrid = document.getElementById('dynamic-grid');
-        myPortfolioData.forEach(item => {
-            const cardHtml = `
-                <div class="group relative p-[1px] rounded-2xl transition-all duration-300 hover:scale-[1.02]">
-                    <!-- Outer Glow Boundary border effect -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/0 to-purple-500/0 group-hover:from-cyan-500/20 group-hover:to-purple-500/20 rounded-2xl transition-all duration-500"></div>
-                    
-                    <!-- Main Inner Glass Panel -->
-                    <div class="relative glass border border-white/5 group-hover:border-white/10 p-6 rounded-2xl h-full flex flex-col justify-between transition-all duration-300 shadow-xl group-hover:shadow-2xl">
-                        <div>
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="font-mono text-[10px] px-2.5 py-1 border rounded-md tracking-wider ${item.badgeClass}">${item.type}</span>
-                                <span class="font-mono text-[11px] text-gray-600 group-hover:text-cyan-400 transition-colors duration-300">// active</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-white tracking-tight mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-cyan-200 transition-all duration-300">${item.title}</h3>
-                            <p class="text-gray-400 text-sm font-light leading-relaxed mb-6">${item.desc}</p>
+        const renderingGrid = document.getElementById('personal-grid');
+        
+        // Dynamic chronological sorting rule: Newest date values first (descending order)
+        personalProjectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Generate card items dynamically
+        personalProjectsData.forEach(project => {
+            // Pick platform visual configurations
+            let badgeStyle = "text-gray-400 border-white/10 bg-white/5";
+            if (project.type === "GITHUB") badgeStyle = "text-blue-400 border-blue-500/20 bg-blue-500/5";
+            if (project.type === "HUGGING FACE") badgeStyle = "text-amber-400 border-amber-500/20 bg-amber-500/5";
+            if (project.type === "APPS") badgeStyle = "text-emerald-400 border-emerald-500/20 bg-emerald-500/5";
+            if (project.type === "YOUTUBE") badgeStyle = "text-red-400 border-red-500/20 bg-red-500/5";
+
+            // Map responsive CTA action triggers based on platform identity
+            let ctaText = "Launch Deployment";
+            if (project.type === "GITHUB") ctaText = "Inspect Repository";
+            if (project.type === "HUGGING FACE") ctaText = "Explore Model Space";
+            if (project.type === "YOUTUBE") ctaText = "Watch Overview Video";
+
+            // Generate structural technology tag strings
+            const tagsMarkup = project.tags.map(t => `<span class="text-[10px] font-mono px-2 py-0.5 border border-white/5 bg-white/[0.02] rounded text-gray-500">${t}</span>`).join('');
+
+            const finalCardHtml = `
+                <div class="glass border border-white/5 hover:border-white/10 p-6 rounded-2xl flex flex-col justify-between transition-all duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-mono text-[10px] tracking-wider px-2.5 py-0.5 rounded border ${badgeStyle}">${project.type}</span>
+                            <span class="font-mono text-xs text-gray-600">${project.date}</span>
                         </div>
-                        <div>
-                            <a href="${item.link}" target="_blank" class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-white/5 hover:bg-cyan-500 text-sm font-mono text-gray-300 hover:text-black rounded-xl border border-white/5 hover:border-transparent transition-all duration-300 group/btn">
-                                <span>${item.actionLabel}</span>
-                                <span class="transform group-hover/btn:translate-x-1 transition-transform duration-300">&rarr;</span>
-                            </a>
-                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-tight">${project.title}</h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-4">${project.desc}</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">${tagsMarkup}</div>
+                    </div>
+                    <div>
+                        <a href="${project.link}" target="_blank" class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-white/5 hover:bg-[#e8702a] text-xs font-mono text-gray-300 hover:text-black rounded-xl border border-white/5 hover:border-transparent transition-all duration-300 group">
+                            <span>${ctaText}</span>
+                            <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
                     </div>
                 </div>
             `;
-            targetGrid.innerHTML += cardHtml;
+            renderingGrid.innerHTML += finalCardHtml;
         });
 
         // =========================================================
-        // 🧠 INTERACTIVE LIVE BACKGROUND CANVAS ENGINE
+        // 📋 INTERACTIVE CLICK-TO-COPY CLIPBOARD SCRIPT
         // =========================================================
-        const canvas = document.getElementById('bg-canvas');
-        const ctx = canvas.getContext('2d');
-        let width = canvas.width = window.innerWidth;
-        let height = canvas.height = window.innerHeight;
-
-        const numParticles = 45;
-        const particles = [];
-        let mouse = { x: null, y: null, radius: 150 };
-
-        window.addEventListener('resize', () => {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
-        });
-        window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
-        window.addEventListener('mouseout', () => { mouse.x = null; mouse.y = null; });
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * width;
-                this.y = Math.random() * height;
-                this.vx = (Math.random() - 0.5) * 0.4;
-                this.vy = (Math.random() - 0.5) * 0.4;
-                this.radius = Math.random() * 2 + 1;
-            }
-            update() {
-                this.x += this.vx;
-                this.y += this.vy;
-                if (this.x < 0 || this.x > width) this.vx *= -1;
-                if (this.y < 0 || this.y > height) this.vy *= -1;
-
-                // Mouse interaction rule
-                if (mouse.x && mouse.y) {
-                    let dx = mouse.x - this.x;
-                    let dy = mouse.y - this.y;
-                    let dist = Math.hypot(dx, dy);
-                    if (dist < mouse.radius) {
-                        let force = (mouse.radius - dist) / mouse.radius;
-                        this.x -= (dx / dist) * force * 2;
-                        this.y -= (dy / dist) * force * 2;
-                    }
-                }
-            }
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(6, 182, 212, 0.35)';
-                ctx.fill();
-            }
+        function copyPrompt(targetId, buttonElement) {
+            const textToCopy = document.getElementById(targetId).innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalText = buttonElement.innerText;
+                buttonElement.innerText = "Prompt Copied Successful! ✓";
+                buttonElement.style.backgroundColor = "#e8702a";
+                buttonElement.style.color = "#000000";
+                
+                setTimeout(() => {
+                    buttonElement.innerText = originalText;
+                    buttonElement.style.backgroundColor = "";
+                    buttonElement.style.color = "";
+                }, 2000);
+            });
         }
-
-        for (let i = 0; i < numParticles; i++) particles.push(new Particle());
-
-        function animate() {
-            ctx.clearRect(0, 0, width, height);
-            particles.forEach(p => { p.update(); p.draw(); });
-            
-            // Connect line calculations
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    let dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
-                    if (dist < 110) {
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `rgba(139, 92, 246, ${0.15 * (1 - dist / 110)})`;
-                        ctx.lineWidth = 0.8;
-                        ctx.stroke();
-                    }
-                }
-            }
-            requestAnimationFrame(animate);
-        }
-        animate();
     </script>
 </body>
 </html>
