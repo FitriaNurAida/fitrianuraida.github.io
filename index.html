@@ -79,26 +79,20 @@
 
     <canvas id="mesh-canvas" class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"></canvas>
 
+    <!-- FLOATING INTERACTIVE NAVIGATION PILL -->
     <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-xl">
         <div class="premium-card rounded-full px-6 py-3 sm:py-4 flex items-center justify-around text-center">
-            <a href="#home" class="text-xs sm:text-sm font-mono tracking-tight nav-link active">Home</a>
-            <a href="#certifications" class="text-xs sm:text-sm font-mono tracking-tight nav-link flex flex-col items-center sm:block">
-                <span>Certifications</span>
-            </a>
+            <a href="#aboutme" class="text-xs sm:text-sm font-mono tracking-tight nav-link active">About Me</a>
             <a href="#my-apps" class="text-xs sm:text-sm font-mono tracking-tight nav-link flex flex-col items-center sm:block">
                 <span>My</span> <span class="sm:inline block">Apps</span>
             </a>
-            <!-- <a href="#personal-projects" class="text-xs sm:text-sm font-mono tracking-tight nav-link flex flex-col items-center sm:block">
-                <span>Personal</span> <span class="sm:inline block">Projects</span>
-            </a>
-            <a href="#company-projects" class="text-xs sm:text-sm font-mono tracking-tight nav-link flex flex-col items-center sm:block">
-                <span>Company</span> <span class="sm:inline block">Projects</span>
-            </a> -->
         </div>
     </nav>
 
-    <section id="home" class="pt-40 pb-24 max-w-5xl mx-auto px-6 relative">
+    <!-- SECTION 1: ABOUT ME -->
+    <section id="aboutme" class="pt-40 pb-24 max-w-5xl mx-auto px-6 relative">
         
+        <!-- LOGO BLOCK MATCHING image_09ba05.png -->
         <div class="flex items-center gap-4 mb-10 select-none">
             <svg class="w-10 h-8 fill-[#06b6d4] drop-shadow-[0_0_8px_rgba(6,182,212,0.6)]" viewBox="0 0 256 256">
                 <path d="M 256 256 L 128 256 L 0 128 L 128 128 Z M 256 128 L 128 128 L 0 0 L 128 0 Z"/>
@@ -111,94 +105,81 @@
                 <span class="w-1.5 h-1.5 rounded-full bg-[#f48fb1] animate-ping"></span> Current Position : ASSOCIATE BI MANAGER & PRACTITIONER LECTURER
             </div>
             
+            <!-- BLENDED HEADER PHRASE -->
             <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none mb-10">
-                Orchestrating data <br><span class="font-playfair italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] via-[#22d3ee] to-[#f48fb1] drop-shadow-[0_2px_10px_rgba(6,182,212,0.15)]">into value & intelligent interfaces.</span>
+                Orchestrating data <br><span class="font-playfair italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] via-[#22d3ee] to-[#f48fb1] drop-shadow-[0_2px_10px_rgba(6,182,212,0.15)]">into value and intelligent interfaces.</span>
             </h1>
             
             <!-- Categorized Summary Grid with Shining & Blinking Effects -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 mt-4">
                 
                 <!-- Box 1: Core Leadership & Strategy -->
-            <div class="premium-card shining-box p-6 rounded-2xl flex flex-col justify-between group relative overflow-hidden lg:col-span-2" style="--box-color: 6, 182, 212; animation-duration: 2.6s;">                <!-- Ambient Blur Corner Glow -->
-                <div class="absolute -top-10 -right-10 w-24 h-24 bg-[#06b6d4]/20 rounded-full blur-xl group-hover:bg-[#f48fb1]/30 transition-all duration-500"></div>
-                
-                <div class="relative z-10 mb-6">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="text-[#06b6d4] text-xl animate-pulse" style="animation-duration: 2s; filter: drop-shadow(0 0 10px rgba(6,182,212,1));">💼</div>
-                        <h3 class="text-white font-bold text-lg tracking-wide">BI Leadership</h3>
+                <div class="premium-card shining-box p-6 rounded-2xl flex flex-col justify-between group relative overflow-hidden lg:col-span-2" style="--box-color: 34, 238, 102; animation-duration: 2.6s;">
+                    <div class="absolute -top-10 -right-10 w-24 h-24 bg-[#06b6d4]/20 rounded-full blur-xl group-hover:bg-[#f48fb1]/30 transition-all duration-500"></div>
+                    
+                    <div class="relative z-10 mb-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="text-[#06b6d4] text-xl animate-pulse" style="animation-duration: 2s; filter: drop-shadow(0 0 10px rgb(34, 238, 102));">💼</div>
+                            <h3 class="text-white font-bold text-lg tracking-wide">BI Leadership</h3>
+                        </div>
+                        <p class="text-slate-200 text-sm font-light leading-relaxed">
+                            Over 6 years of driving high-impact analytics initiatives across the FMCG, cosmetic retail, telecom, gov-tech, agricultural, and luxury retail sectors. Proven track record of scaling data teams, navigating divisions through complex corporate transitions, and optimizing data ecosystems.
+                        </p>
                     </div>
-                    <p class="text-slate-200 text-sm font-light leading-relaxed">
-                        Over 6 years of driving high-impact analytics initiatives across the FMCG, cosmetic retail, telecom, gov-tech, agricultural, and luxury retail sectors. Proven track record of scaling data teams, navigating divisions through complex corporate transitions, and optimizing data ecosystems.
-                    </p>
+
+                    <div class="relative z-10 pt-4 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-y-5 gap-x-4 justify-between items-start">                    
+                        <div class="flex items-center gap-2.5 min-w-[120px]">
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">👥</div>
+                            <div class="flex flex-col">
+                                <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">15 Direct Reports</span>
+                                <span class="text-slate-400 text-[11px] leading-tight">Peak Division Scale</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 min-w-[120px]">
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">🏆</div>
+                            <div class="flex flex-col">
+                                <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">Awarded Leader</span>
+                                <span class="text-slate-400 text-[11px] leading-tight">"Most Impactful" '23</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 min-w-[120px]">
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">⏳</div>
+                            <div class="flex flex-col">
+                                <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">4+ Years</span>
+                                <span class="text-slate-400 text-[11px] leading-tight">Managerial Tenure</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 min-w-[120px]">
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">🛡️</div>
+                            <div class="flex flex-col">
+                                <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">Sole Driver</span>
+                                <span class="text-slate-400 text-[11px] leading-tight">End-to-End Analytics</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 min-w-[120px]">
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">🔄</div>
+                            <div class="flex flex-col">
+                                <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">100% Stability</span>
+                                <span class="text-slate-400 text-[11px] leading-tight">Sustained Core Systems</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 min-w-[120px]">
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">🌐</div>
+                            <div class="flex flex-col">
+                                <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">5+ Enterprises</span>
+                                <span class="text-slate-400 text-[11px] leading-tight">Across 5 Diverse Sectors</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="relative z-10 pt-4 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-y-5 gap-x-4 justify-between items-start">                    
-
-                    <div class="flex items-center gap-2.5 min-w-[120px]">
-                        <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">
-                            👥
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">15 Direct Reports</span>
-                            <span class="text-slate-400 text-[11px] leading-tight">Peak Division Scale</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 min-w-[120px]">
-                        <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">
-                            🏆
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">Awarded Leader</span>
-                            <span class="text-slate-400 text-[11px] leading-tight">"Most Impactful" '23</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 min-w-[120px]">
-                        <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">
-                            ⏳
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">4+ Years</span>
-                            <span class="text-slate-400 text-[11px] leading-tight">Managerial Tenure</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 min-w-[120px]">
-                        <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">
-                            🛡️
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">Sole Driver</span>
-                            <span class="text-slate-400 text-[11px] leading-tight">End-to-End Analytics</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 min-w-[120px]">
-                        <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">
-                            🔄
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">100% Stability</span>
-                            <span class="text-slate-400 text-[11px] leading-tight">Sustained Core Systems</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 min-w-[120px]">
-                        <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#06b6d4]/10 text-[#06b6d4] text-base group-hover:bg-[#06b6d4]/20 transition-colors duration-300">
-                            🌐
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">5+ Enterprises</span>
-                            <span class="text-slate-400 text-[11px] leading-tight">Across 5 Diverse Sectors</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
 
                 <!-- Box 2: Data Engineering & Analytics -->
-                <div class="premium-card shining-box p-6 rounded-2xl flex flex-col justify-between group relative overflow-hidden lg:col-span-2" style="--box-color: 244, 143, 177; animation-duration: 3.2s; animation-delay: 0.4s;">                <!-- Ambient Blur Corner Glow -->
+                <div class="premium-card shining-box p-6 rounded-2xl flex flex-col justify-between group relative overflow-hidden lg:col-span-2" style="--box-color: 244, 143, 177; animation-duration: 3.2s; animation-delay: 0.4s;">
                     <div class="absolute -top-10 -right-10 w-24 h-24 bg-[#f48fb1]/20 rounded-full blur-xl group-hover:bg-[#06b6d4]/30 transition-all duration-500"></div>
 
                     <div class="relative z-10 mb-6">
@@ -213,9 +194,7 @@
 
                     <div class="relative z-10 pt-4 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-y-5 gap-x-4 justify-between items-start">                                            
                         <div class="flex items-center gap-2.5">
-                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">
-                                📈
-                            </div>
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">📈</div>
                             <div class="flex flex-col">
                                 <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">600+ Viz Dashboards</span>
                                 <span class="text-slate-400 text-[11px] leading-tight">Built by BI Team in 5+ Y</span>
@@ -223,9 +202,7 @@
                         </div>
 
                         <div class="flex items-center gap-2.5">
-                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">
-                                🚀
-                            </div>
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">🚀</div>
                             <div class="flex flex-col">
                                 <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">40+ BI Team Projects</span>
                                 <span class="text-slate-400 text-[11px] leading-tight">Analytics Projects in 2023</span>
@@ -233,9 +210,7 @@
                         </div>
 
                         <div class="flex items-center gap-2.5">
-                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">
-                                🎯
-                            </div>
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">🎯</div>
                             <div class="flex flex-col">
                                 <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">50+ Dashboards</span>
                                 <span class="text-slate-400 text-[11px] leading-tight">Individual Contributor</span>
@@ -243,9 +218,7 @@
                         </div>
 
                         <div class="flex items-center gap-2.5">
-                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">
-                                🔧
-                            </div>
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">🔧</div>
                             <div class="flex flex-col">
                                 <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">10+ DAGs</span>
                                 <span class="text-slate-400 text-[11px] leading-tight">Airflow, Current Maintained</span>
@@ -253,9 +226,7 @@
                         </div>
 
                         <div class="flex items-center gap-2.5">
-                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">
-                                🧩
-                            </div>
+                            <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base group-hover:bg-[#f48fb1]/20 transition-colors duration-300">🧩</div>
                             <div class="flex flex-col">
                                 <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">10+ Solo Projects</span>
                                 <span class="text-slate-400 text-[11px] leading-tight">Analytics Projects, 5+ Y</span>
@@ -264,16 +235,13 @@
 
                         <div class="flex items-center gap-2.5">
                             <div class="flex items-center gap-2.5 cursor-pointer select-none">
-                                <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base">
-                                    🛠️
-                                </div>
+                                <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#f48fb1]/10 text-[#f48fb1] text-base">🛠️</div>
                                 <div class="flex flex-col">
                                     <span class="text-white font-bold text-sm tracking-tight leading-none mb-1">20+ Tools</span>
                                     <span class="text-slate-400 text-[11px] leading-tight">Full Breakdown in CV</span>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -292,7 +260,6 @@
                     </div>
 
                     <div class="relative z-10 pt-4 border-t border-white/10 grid grid-cols-2 gap-y-5 gap-x-4">
-                        
                         <div class="flex items-center gap-2.5">
                             <div class="w-9 h-9 shrink-0 rounded-lg flex items-center justify-center bg-[#00f2fe]/10 text-[#00f2fe] text-base group-hover:bg-[#00f2fe]/20 transition-colors duration-300">🎓</div>
                             <div class="flex flex-col">
@@ -324,7 +291,6 @@
                                 <span class="text-slate-400 text-[11px] leading-tight">Data & Tech Focus</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -335,7 +301,7 @@
                     <div class="relative z-10 mb-6">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="text-[#a855f7] text-xl animate-pulse" style="animation-duration: 2.8s; filter: drop-shadow(0 0 10px rgba(168,85,247,1));">🧠</div>
-                            <h3 class="text-white font-bold text-lg tracking-wide">AI Engineering</h3>
+                            <div class="text-white font-bold text-lg tracking-wide">AI Engineering</div>
                         </div>
                         <p class="text-slate-200 text-sm font-light leading-relaxed">
                             Blending a strong academic foundation in Statistics and Technology Management with a passion for innovation. Actively expanding my technical portfolio into machine learning engineering, prompt engineering, and advanced AI implementations.
@@ -352,68 +318,130 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
+            <!-- Box: Verified Credentials & Certifications -->
+            <div class="premium-card shining-box p-6 rounded-2xl flex flex-col justify-between group relative overflow-hidden lg:col-span-2" style="--box-color: 172, 6, 61; animation-duration: 3.4s; animation-delay: 1s;">                
+                <!-- Ambient Pink Glow -->
+                <div class="absolute -top-10 -right-10 w-24 h-24 bg-[#f48fb1]/20 rounded-full blur-xl group-hover:bg-[#06b6d4]/30 transition-all duration-500"></div>
+            
+                <div class="relative z-10 mb-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-[#f48fb1] text-xl animate-pulse" style="animation-duration: 2.8s; filter: drop-shadow(0 0 10px rgb(172, 6, 61));">🛡️</div>
+                        <h3 class="text-white font-bold text-lg tracking-wide">Verified Credentials</h3>
+                    </div>
+                    <p class="text-slate-200 text-sm font-light leading-relaxed">
+                        My technical expertise is rigorously backed by industry-standard validations. I hold active certifications in advanced cloud data architectures, modern pipeline orchestration, and generative AI engineering.
+                    </p>
+                </div>
+
+                <!-- Direct LinkedIn Verification Button -->
+                <div class="relative z-10 pt-4 border-t border-white/10">
+                    <a href="https://linkedin.com/in/fitrianuraida" target="_blank" class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-slate-900/60 hover:bg-[#f48fb1] text-xs font-mono text-slate-300 hover:text-black rounded-xl border border-cyan-900/60 hover:border-transparent transition-all duration-300 group">
+                        <span class="flex items-center gap-2">🔍 View All Certifications in My LinkedIn or Credly</span>
+                        <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Links -->
             <div class="mt-8 flex flex-wrap gap-4 text-xs font-mono text-slate-400">
                 <a href="mailto:fitrianuraida@outlook.com" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900/40 border border-cyan-900/50 hover:border-[#f48fb1]/50 rounded-xl transition-all hover:text-white hover:shadow-[0_0_15px_rgba(244,143,177,0.2)]">
-                    <svg class="w-4 h-4" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <style>.cls-1{fill:#75cede;}.cls-2{fill:#00a6bc;}</style>
-                        </defs>
-                        <g data-name="Layer 6" id="Layer_6">
-                            <path class="cls-1" d="M3.64,6,16,14.77,28.36,6a1,1,0,0,1,1.08,0A4.08,4.08,0,0,0,26.92,5H5.08a4.08,4.08,0,0,0-2.52.9A1,1,0,0,1,3.64,6Z"/>
-                            <path class="cls-2" d="M29.56,6a.86.86,0,0,1,.19.19,1,1,0,0,1-.23,1.39L16.58,16.81a1,1,0,0,1-1.16,0L2.48,7.57a1,1,0,0,1-.23-1.39A.86.86,0,0,1,2.44,6,4.08,4.08,0,0,0,1,9.08V22.92A4.08,4.08,0,0,0,5.08,27H26.92A4.08,4.08,0,0,0,31,22.92V9.08A4.08,4.08,0,0,0,29.56,6ZM13.78,18.81,3.64,26.05a1,1,0,0,1-.58.19,1,1,0,0,1-.81-.42,1,1,0,0,1,.23-1.39l10.14-7.24a1,1,0,0,1,1.16,1.62Zm16,7a1,1,0,0,1-.81.42,1,1,0,0,1-.58-.19L18.22,18.81a1,1,0,1,1,1.16-1.62l10.14,7.24A1,1,0,0,1,29.75,25.82Z"/>
-                        </g>
-                    </svg>
+                    <svg class="w-4 h-4" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#75cede;}.cls-2{fill:#00a6bc;}</style></defs><g id="Layer_6"><path class="cls-1" d="M3.64,6,16,14.77,28.36,6a1,1,0,0,1,1.08,0A4.08,4.08,0,0,0,26.92,5H5.08a4.08,4.08,0,0,0-2.52.9A1,1,0,0,1,3.64,6Z"/><path class="cls-2" d="M29.56,6a.86.86,0,0,1,.19.19,1,1,0,0,1-.23,1.39L16.58,16.81a1,1,0,0,1-1.16,0L2.48,7.57a1,1,0,0,1-.23-1.39A.86.86,0,0,1,2.44,6,4.08,4.08,0,0,0,1,9.08V22.92A4.08,4.08,0,0,0,5.08,27H26.92A4.08,4.08,0,0,0,31,22.92V9.08A4.08,4.08,0,0,0,29.56,6ZM13.78,18.81,3.64,26.05a1,1,0,0,1-.58.19,1,1,0,0,1-.81-.42,1,1,0,0,1,.23-1.39l10.14-7.24a1,1,0,0,1,1.16,1.62Zm16,7a1,1,0,0,1-.81.42,1,1,0,0,1-.58-.19L18.22,18.81a1,1,0,1,1,1.16-1.62l10.14,7.24A1,1,0,0,1,29.75,25.82Z"/></g></svg>
                     <span>Drop a Line</span>
                 </a>
                 <a href="https://linkedin.com/in/fitrianuraida" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900/40 border border-cyan-900/50 hover:border-[#f48fb1]/50 rounded-xl transition-all hover:text-white hover:shadow-[0_0_15px_rgba(244,143,177,0.2)]">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" id="linkedin" data-name="Line Color" xmlns="http://www.w3.org/2000/svg"><path id="secondary" d="M16,17V14a2,2,0,0,0-2-2h0a2,2,0,0,0-2,2v3" style="fill: none; stroke: rgb(34, 211, 238); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="secondary-2" data-name="secondary" d="M8,12v5m4-3V12" style="fill: none; stroke: rgb(34, 211, 238); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><line id="secondary-upstroke" x1="7.95" y1="7.5" x2="8.05" y2="7.5" style="fill: none; stroke: rgb(34, 211, 238); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line><rect id="primary" x="3" y="3" width="18" height="18" rx="1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></rect></svg>
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" id="linkedin" xmlns="http://www.w3.org/2000/svg"><path d="M16,17V14a2,2,0,0,0-2-2h0a2,2,0,0,0-2,2v3" style="fill: none; stroke: rgb(34, 211, 238); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path d="M8,12v5m4-3V12" style="fill: none; stroke: rgb(34, 211, 238); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><line x1="7.95" y1="7.5" x2="8.05" y2="7.5" style="fill: none; stroke: rgb(34, 211, 238); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line><rect x="3" y="3" width="18" height="18" rx="1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></rect></svg>
                     <span>Connect</span>
                 </a>
-                <a href="https://github.com/fitrianuraida" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900/40 border border-cyan-900/50 hover:border-[#f48fb1]/50 rounded-xl transition-all hover:text-white hover:shadow-[0_0_15px_rgba(244,143,177,0.2)]">
-                    <svg class="w-4 h-4" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <title>github</title>
-                        <path d="M23.563 20.469l-0.063 0.25c-0.094 0.25-0.219 0.5-0.313 0.75 0 0.063-0.063 0.188-0.094 0.25-1 2.219-2.875 3.281-5.781 3.813-0.156 0.031-0.438 0.094-0.719 0.125-2.813 0.344-4.938 0.406-7.75 0.156-0.094 0-0.219-0.031-0.281-0.031-3.906-0.438-6.219-1.844-7.438-4.094-0.031-0.031-0.094-0.125-0.125-0.25-0.125-0.219-0.219-0.5-0.313-0.719-0.063-0.125-0.094-0.188-0.125-0.281-0.406-1.156-0.563-2.5-0.563-4 0-2.625 0.813-3.656 1.906-5.063-0.844-3 0.344-5.063 0.344-5.063s1.781-0.375 5.156 2.031c1.813-0.781 6.656-0.844 8.969-0.156 1.406-0.938 4-2.25 5.063-1.875 0.25 0.438 0.844 1.75 0.344 4.656 0.344 0.625 2.219 2 2.219 5.844-0.031 1.406-0.188 2.625-0.438 3.656zM3.094 19.563c0 3.469 2.438 5 5.844 5.281 0.219 0.031 0.438 0.031 0.688 0.063 1.594 0.031 3.594 0.063 5.563 0 0.438-0.031 0.875-0.063 1.281-0.125 3.25-0.469 4.594-2.344 4.594-4.969 0-1.906-0.875-4.406-4.375-4.406-0.25 0-2.313 0.25-4.281 0.25-2.219 0-4.5-0.25-4.844-0.25-3.594 0-4.469 2.844-4.469 4.156zM7.219 17.969c0.688 0 1.219 0.813 1.219 1.813s-0.531 1.813-1.219 1.813-1.188-0.813-1.188-1.813 0.5-1.813 1.188-1.813zM17.313 21.594c-0.719 0-1.25-0.813-1.25-1.813s0.531-1.813 1.25-1.813c0.688 0 1.219 0.813 1.219 1.813s-0.531 1.813-1.219 1.813zM12.125 22.469c-0.313 0-0.563-0.281-0.563-0.594 0-0.281 0.25-0.531 0.563-0.531s0.594 0.25 0.594 0.531c0 0.313-0.281 0.594-0.594 0.594zM12.156 24.344c-0.906 0-1.625-0.781-1.625-1.25 0-0.188 0.125-0.344 0.313-0.344s0.313 0.156 0.313 0.344c0.031 0.094 0.438 0.625 1 0.625 0.438 0 0.844-0.375 0.844-0.625 0-0.188 0.156-0.344 0.313-0.344 0.188 0 0.344 0.156 0.344 0.344 0 0.563-0.625 1.25-1.5 1.25z" fill="rgb(34, 211, 238)"></path>
+                <a href="https://www.credly.com/users/fitrianuraida/badges/credly" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900/40 border border-cyan-900/50 hover:border-[#f48fb1]/50 rounded-xl transition-all hover:text-white hover:shadow-[0_0_15px_rgba(244,143,177,0.2)]">
+                    <svg class="w-4 h-4 fill-cyan-400 group-hover:fill-[#f48fb1] transition-colors" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm3 10H9v-1c0-1 2-1.5 3-1.5s3 .5 3 1.5v1z"/>
                     </svg>
+                    <span>Verify Badges</span>
+                </a>
+                <a href="https://github.com/fitrianuraida" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900/40 border border-cyan-900/50 hover:border-[#f48fb1]/50 rounded-xl transition-all hover:text-white hover:shadow-[0_0_15px_rgba(244,143,177,0.2)]">
+                    <svg class="w-4 h-4" viewBox="-4 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M23.563 20.469l-0.063 0.25c-0.094 0.25-0.219 0.5-0.313 0.75 0 0.063-0.063 0.188-0.094 0.25-1 2.219-2.875 3.281-5.781 3.813-0.156 0.031-0.438 0.094-0.719 0.125-2.813 0.344-4.938 0.406-7.75 0.156-0.094 0-0.219-0.031-0.281-0.031-3.906-0.438-6.219-1.844-7.438-4.094-0.031-0.031-0.094-0.125-0.125-0.25-0.125-0.219-0.219-0.5-0.313-0.719-0.063-0.125-0.094-0.188-0.125-0.281-0.406-1.156-0.563-2.5-0.563-4 0-2.625 0.813-3.656 1.906-5.063-0.844-3 0.344-5.063 0.344-5.063s1.781-0.375 5.156 2.031c1.813-0.781 6.656-0.844 8.969-0.156 1.406-0.938 4-2.25 5.063-1.875 0.25 0.438 0.844 1.75 0.344 4.656 0.344 0.625 2.219 2 2.219 5.844-0.031 1.406-0.188 2.625-0.438 3.656zM3.094 19.563c0 3.469 2.438 5 5.844 5.281 0.219 0.031 0.438 0.031 0.688 0.063 1.594 0.031 3.594 0.063 5.563 0 0.438-0.031 0.875-0.063 1.281-0.125 3.25-0.469 4.594-2.344 4.594-4.969 0-1.906-0.875-4.406-4.375-4.406-0.25 0-2.313 0.25-4.281 0.25-2.219 0-4.5-0.25-4.844-0.25-3.594 0-4.469 2.844-4.469 4.156zM7.219 17.969c0.688 0 1.219 0.813 1.219 1.813s-0.531 1.813-1.219 1.813-1.188-0.813-1.188-1.813 0.5-1.813 1.188-1.813zM17.313 21.594c-0.719 0-1.25-0.813-1.25-1.813s0.531-1.813 1.25-1.813c0.688 0 1.219 0.813 1.219 1.813s-0.531 1.813-1.219 1.813zM12.125 22.469c-0.313 0-0.563-0.281-0.563-0.594 0-0.281 0.25-0.531 0.563-0.531s0.594 0.25 0.594 0.531c0 0.313-0.281 0.594-0.594 0.594zM12.156 24.344c-0.906 0-1.625-0.781-1.625-1.25 0-0.188 0.125-0.344 0.313-0.344s0.313 0.156 0.313 0.344c0.031 0.094 0.438 0.625 1 0.625 0.438 0 0.844-0.375 0.844-0.625 0-0.188 0.156-0.344 0.313-0.344 0.188 0 0.344 0.156 0.344 0.344 0 0.563-0.625 1.25-1.5 1.25z" fill="rgb(34, 211, 238)"></path></svg>
                     <span>Review builds</span>
                 </a>
+                <a href="https://huggingface.co/fitrianuraida" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900/40 border border-cyan-900/50 hover:border-[#f48fb1]/50 rounded-xl transition-all hover:text-white hover:shadow-[0_0_15px_rgba(244,143,177,0.2)]">
+                    <svg class="w-4 h-4 fill-cyan-400 group-hover:fill-[#f48fb1] transition-colors duration-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15.5h-2v-2h2v2zm0-4h-2V7h2v6.5z"/>
+                    </svg>
+                    <span>Inspect models</span>
+                </a>
             </div>
-        </div>
-        
-    </section>
 
-    <section id="certifications" class="py-24 border-t border-cyan-900/60 max-w-5xl mx-auto px-6 mb-16">
+        </div>
     </section>
     
-    <section id="my-apps" class="bg-[#02060c]/90 backdrop-blur-md py-24 border-t border-cyan-900/60">
+    <!-- SECTION 2: MY APPS -->
+    <section id="my-apps" class="bg-[#02060c]/90 backdrop-blur-md py-24 border-t border-cyan-900/60"> 
         <div class="max-w-5xl mx-auto px-6">
+            <div class="mb-10 text-center md:text-left">
+                <h2 class="text-xs font-mono tracking-widest text-[#f48fb1] uppercase mb-2">// DATA-TO-VALUE PIPELINES & AI</h2>
+                <p class="text-slate-400 text-sm font-light">A curated archive of production workflows, automated analytics, and intelligent systems built to drive actionable business results.</p>
+            </div>
             <div id="personal-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="max-w-5xl mx-auto px-6 py-12 border-t border-cyan-900/40 text-center md:flex md:items-center md:justify-between text-xs font-mono text-slate-500">
         <div>&copy; 2026 Fitria Nur Aida &bull; Portfolio Studio</div>
     </footer>
 
+    <!-- INTERACTIVE JAVASCRIPT SYSTEM ENGINE -->
     <script>
-        const personalProjectsData = [];
+        // =========================================================
+        // 🛠️ DATA LIST LAYER (Updated with Video Demo Asset)
+        // =========================================================
+        const personalProjectsData = [
+            {
+                title: "Indo VibeMarket Insights App",
+                type: "APPS",
+                date: "2026-05",
+                desc: "Real-time location-intelligence dashboard tailored for the Indonesian market that analyzes business density, visibility, and consumer sentiment using Google Maps and Gemini AI to deliver automated strategic market insights for expansion planning and competitive benchmarking.",
+                link: "https://youtu.be/sH_bCKb_oKM", // 💡 Paste your actual YouTube video link here
+                tags: ["AI Implementation", "Google AI Studio"]
+            }
+        ];
 
+        // =========================================================
+        // 🔄 AUTOMATIC ARRAY ENGINE RENDERING
+        // =========================================================
         const renderingGrid = document.getElementById('personal-grid');
         personalProjectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         personalProjectsData.forEach(project => {
             let badgeStyle = "text-slate-400 border-cyan-900 bg-cyan-950/20";
-            if (project.type === "GITHUB") badgeStyle = "text-cyan-400 border-cyan-400/50 bg-cyan-950/40 shadow-[0_0_12px_rgba(34,211,238,0.2)]";
-            if (project.type === "HUGGING FACE") badgeStyle = "text-[#f48fb1] border-[#f48fb1]/40 bg-[#f48fb1]/5 shadow-[0_0_12px_rgba(244,143,177,0.2)]";
-            if (project.type === "APPS") badgeStyle = "text-emerald-400 border-emerald-500/30 bg-emerald-500/5";
-            if (project.type === "YOUTUBE") badgeStyle = "text-red-400 border-red-500/30 bg-red-500/5";
+            let ctaText = "Play App Demo Video";
+            let maintenanceBannerHtml = "";
+
+            // Check if project is under maintenance
+            if (project.tags.includes("Under Maintenance")) {
+                maintenanceBannerHtml = `
+                    <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-[10px] mb-4 w-fit animate-pulse">
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> ⚙️ SYSTEM UNDER MAINTENANCE
+                    </div>
+                `;
+            }
+            
+            if (project.type === "YOUTUBE") {
+                badgeStyle = "text-red-400 border-red-500/30 bg-red-500/5 shadow-[0_0_12px_rgba(239,68,68,0.15)]";
+                ctaText = "Watch Video Explanation";
+            } else if (project.type === "GITHUB") {
+                badgeStyle = "text-cyan-400 border-cyan-400/50 bg-cyan-950/40 shadow-[0_0_12px_rgba(34,211,238,0.2)]";
+            } else if (project.type === "HUGGING FACE") {
+                badgeStyle = "text-[#f48fb1] border-[#f48fb1]/40 bg-[#f48fb1]/5 shadow-[0_0_12px_rgba(244,143,177,0.2)]";
+            } else if (project.type === "APPS") {
+                badgeStyle = "text-emerald-400 border-emerald-500/30 bg-emerald-500/5";
+            }
 
             const tagsMarkup = project.tags.map(t => `<span class="text-[10px] font-mono px-2 py-0.5 border border-cyan-900/60 bg-slate-900/50 rounded text-slate-400">${t}</span>`).join('');
 
             const finalCardHtml = `
-                <div class="premium-card p-6 rounded-2xl flex flex-col justify-between">
+                <div class="premium-card p-6 rounded-2xl flex flex-col justify-between max-w-xl mx-auto md:col-span-2 w-full">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="font-mono text-[10px] tracking-wider px-2.5 py-0.5 rounded border ${badgeStyle}">${project.type}</span>
@@ -421,11 +449,12 @@
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2 tracking-tight">${project.title}</h3>
                         <p class="text-slate-400 text-sm font-light leading-relaxed mb-4">${project.desc}</p>
+                        ${maintenanceBannerHtml}
                         <div class="flex flex-wrap gap-1.5 mb-6">${tagsMarkup}</div>
                     </div>
                     <div>
                         <a href="${project.link}" target="_blank" class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-slate-900/60 hover:bg-[#f48fb1] text-xs font-mono text-slate-300 hover:text-black rounded-xl border border-cyan-900/60 hover:border-transparent transition-all duration-300 group">
-                            <span>Inspect Resource</span>
+                            <span class="flex items-center gap-2">▶ ${ctaText}</span>
                             <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </a>
                     </div>
@@ -435,7 +464,37 @@
         });
 
         // =========================================================
-        // 🧠 CANVAS BACKEND
+        // 🔄 SCROLL-SPY ACTIVE NAV INDICATOR SCRIPT
+        // =========================================================
+        window.addEventListener('scroll', () => {
+            let currentSection = 'aboutme';
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.scrollY || window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollPosition >= sectionTop - 200) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // =========================================================
+        // 🧠 CANVAS BACKEND ENGINE
         // =========================================================
         const canvas = document.getElementById('mesh-canvas');
         const ctx = canvas.getContext('2d');
